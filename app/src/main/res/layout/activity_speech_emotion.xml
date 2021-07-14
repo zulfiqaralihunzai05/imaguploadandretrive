@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".speech_emotion">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/voice_logo"
+            android:layout_margin="5dp"
+            android:id="@+id/emojiEmotionImageView"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Emotion metrics"
+            android:layout_marginBottom="15dp"
+            android:textSize="18dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:text="Neutrality:"
+            android:id="@+id/textViewNeutrality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:max="100"
+            android:id="@+id/progressBarNeutrality"
+            android:indeterminate="false"
+            android:progress="0"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:text="Happiness:"
+            android:id="@+id/textViewHappiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:max="100"
+            android:id="@+id/progressBarHappiness"
+            android:indeterminate="false"
+            android:progress="0"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:text="Sadness:"
+            android:id="@+id/textViewSadness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:max="100"
+            android:id="@+id/progressBarSadness"
+            android:indeterminate="false"
+            android:progress="0"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:text="Anger:"
+            android:id="@+id/textViewAnger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:max="100"
+            android:id="@+id/progressBarAnger"
+            android:indeterminate="false"
+            android:progress="0"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:text="Fear:"
+            android:id="@+id/textViewFear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:max="100"
+            android:id="@+id/progressBarFear"
+            android:indeterminate="false"
+            android:progress="0"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:paddingTop="5dp"
+            android:id="@+id/actionStatus"
+            android:textAlignment="center"
+            android:text="Press below button to start recording"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record"
+            android:layout_weight="2"
+            android:id="@+id/button"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOP"
+            android:layout_weight="2"
+            android:id="@+id/button2"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:id="@+id/button3"
+            android:layout_alignTop="@+id/button2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="2"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOP PLAYING RECORDING "
+            android:id="@+id/button4"
+            android:layout_weight="2"
+            android:layout_centerHorizontal="true"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Predict "
+        android:layout_gravity="center"
+        android:id="@+id/text_predict"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</LinearLayout>

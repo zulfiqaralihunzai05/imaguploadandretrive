@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".textual_emotion">
+
+
+    <ImageView
+        android:src="@drawable/text_logo"
+        android:layout_margin="5dp"
+        android:id="@+id/emojiEmotionImageView"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Emotion metrics"
+        android:layout_marginBottom="15dp"
+        android:textSize="18dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:text="Neutrality:"
+        android:id="@+id/textViewNeutrality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:id="@+id/progressBarNeutrality"
+        android:indeterminate="false"
+        android:progress="0"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <TextView
+        android:text="Happiness:"
+        android:id="@+id/textViewHappiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:id="@+id/progressBarHappiness"
+        android:indeterminate="false"
+        android:progress="0"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <TextView
+        android:text="Sadness:"
+        android:id="@+id/textViewSadness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:id="@+id/progressBarSadness"
+        android:indeterminate="false"
+        android:progress="0"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <TextView
+        android:text="Anger:"
+        android:id="@+id/textViewAnger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:id="@+id/progressBarAnger"
+        android:indeterminate="false"
+        android:progress="0"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <TextView
+        android:text="Fear:"
+        android:id="@+id/textViewFear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"
+        android:id="@+id/progressBarFear"
+        android:indeterminate="false"
+        android:progress="0"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:id="@+id/actionStatus"
+        android:textAlignment="center"
+        android:text="Enter your text below!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+
+
+    <EditText
+        android:id="@+id/text_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:maxWidth="240dp"
+        android:maxHeight="240dp"
+        android:inputType="text"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prediction_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="predict"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/pick_image_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="clear"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>
